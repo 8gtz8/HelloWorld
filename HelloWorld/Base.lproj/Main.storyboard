@@ -22,7 +22,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlZ-jQ-2as">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlZ-jQ-2as" userLabel="Show Text">
                                 <rect key="frame" x="82" y="727" width="250" height="46"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -32,6 +32,10 @@
                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Show Texe"/>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7a-1k-afd"/>
+                                    <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yi-Nh-E7n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +48,12 @@
                             <constraint firstItem="zlZ-jQ-2as" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k45-3H-fSk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="HelloWorldLabel" destination="7cD-Uo-nzJ" id="r1b-P7-3ze"/>
+                        <outlet property="Strongg" destination="zlZ-jQ-2as" id="Awm-gT-4Kw"/>
+                        <outlet property="helloWorldLabel" destination="7cD-Uo-nzJ" id="fch-SC-Yqk"/>
+                        <outlet property="toggleButton" destination="zlZ-jQ-2as" id="jqR-5S-nHz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
